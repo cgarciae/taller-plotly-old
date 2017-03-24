@@ -9,7 +9,7 @@ services:
     volumes:
       - ./notebooks:/notebooks
     ports:
-      - "9999:8888"
+      - "8888:8888"
 
   mongo:
     image: mongo:3.4
