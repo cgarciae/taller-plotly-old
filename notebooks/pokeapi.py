@@ -76,10 +76,6 @@ class Pokemon(dict):
         else:
             pkm = Pokemon.catch_on_internet(id)
 
-            _mkdir_p("pokemons")
-            with open(local_path, 'w') as f :
-                json.dump(pkm, f)
-
             return pkm
 
 
